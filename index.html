@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculador de sueldo</title>
+	<script type="text/javascript" src=codigo.js></script>
+	<meta name="viewport" conten="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+				<h1>CALCULADOR DE SUELDO</h1>
+		</div>
+	</header>
+
+	<div class="container">
+		<section class="main row">
+			<img src="guardia.jpg">
+			<article class="col-xs-12 col-sm-6 col-md-6">
+				<br>
+				<p>
+					Introduzca los datos solicitados y luego presione el botón "Calcular sueldo"
+				</p><br>
+			</article>
+			<article class="col-xs-12 col-sm-6 col-md-6">
+				<br>
+				<button class="btn btn-primary" onclick="calcularSueldo()">Calcular sueldo</button>
+			</article>
+		</section>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<h3>
+					Ingreso de datos
+				</h3>
+				
+				Seleccione su categoría:<br>
+				<select id="selectCategoria">
+					<option value="monitoreo">Monitoreo</option>
+					<option value="acuda">Acuda</option>
+				</select><br><br>
+
+				Indique su antiguedad:<br>
+				<select id="selectAntiguedad">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</select> años<br><br>
+
+				¿Percibe "A cuenta futuros aumentos" en blanco? Indique cantidad:<br>
+				<input type="number" value=0 id="txtIdACuentaRecibo"><br><br>
+
+				¿Percibe "A cuenta futuros aumentos" en sobre? Indique cantidad:<br>
+				<input type="number" value=0 id="txtIdACuentaSobre"><br><br>
+
+				¿Trabajó horas extras? Indique cantidad:<br>
+				<input type="number" value=0 id="txtIdHorasExtra"><br><br>
+
+				¿Trabajó horas feriado? Indique cantidad:<br>
+				<input type="number" value=0 id="txtIdHorasFeriado"><br><br>
+
+				¿Gozó de licencia paga? Indique días:<br> (vacaciones/enfermedad justificada/estudio) <br> 
+				<input type="number" value=0 id="txtIdLicenciaPaga"><br><br>
+
+				¿Tuvo días sin goce de sueldo? Indique días:<br> (suspensiones/enfermedad sin justificar) <br> 
+				<input type="number" value=0 id="txtIdLicenciaNoPaga"><br><br>
+
+				¿Recibió anticipo?<br>
+				<input type="number" value=0 id="txtIdAnticipo"><br><br>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<h3>Resultados</h3>
+
+				Sueldo básico:<br>
+				<input type="number" readonly placeholder="Sueldo básico" id="txtIdMontoSueldoBasico"><br><br>
+
+				Presentismo:<br>
+				<input type="number" readonly placeholder="Presentismo" id="txtIdMontoPresentismo"><br><br>
+
+				Antiguedad:<br>
+				<input type="number" readonly placeholder="Antiguedad" id="txtIdMontoAntiguedad"><br><br>
+
+				A cuenta en recibo:<br>
+				<input type="number" readonly placeholder="Adicional en recibo" id="txtIdDineroACuenta"><br><br>
+
+				Horas extra:<br>
+				<input type="number" readonly placeholder="Horas extra" id="txtIdMontoHorasExtra"><br><br>
+
+				Horas feriado:<br>
+				<input type="number" readonly placeholder="Horas feriado" id="txtIdMontoHorasFeriado"><br><br>
+
+				Viáticos:<br>
+				<input type="number" readonly placeholder="Viáticos" id="txtIdMontoViaticos"><br><br>
+
+				Total bruto en recibo:<br>
+				<input type="number" readonly placeholder="Total bruto" id="txtIdTotalBruto"><br><br>
+
+				Total neto en recibo:<br>
+				<input type="number" readonly placeholder="Total neto" id="txtIdTotalNeto"><br><br>
+
+				Dinero en sobre:<br>
+				<input type="number" readonly placeholder="Dinero en sobre" id="txtIdDineroEnSobre"><br><br>
+
+				Total en mano:<br>
+				<input type="number" readonly placeholder="Total en mano" id="txtIdTotalEnMano"><br><br>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<h3>Sitio web creado con fines informativos</h3>
+		</div>
+	</footer>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<noscript>
+		<h1>CUIDADO...</h1>
+		<p>Bienvenido a mi sitio</p>
+		<p>Esta web trabaja con JavaScript. Si está deshabilitado por favor actívalo.</p>
+	</noscript>
+</body>
+</html>
